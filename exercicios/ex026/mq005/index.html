@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,6 +31,14 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque maiores, eaque nesciunt beatae nihil ullam fuga necessitatibus quam ipsa a, repellendus maxime debitis illum incidunt distinctio cupiditate impedit eos quibusdam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error iure quos magnam reiciendis nulla accusamus repellat sequi, maiores deserunt facilis dolore pariatur amet libero, modi doloremque quidem voluptate incidunt et?</p>
         </article>
     </main>
-
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
